@@ -1,0 +1,2015 @@
+/*--------------------------------------------------
+Template Name: smarto;
+Description: Creative Portfolio Bootstrap 4 Template;
+-----------------------------------------------------
+
+    CSS INDEX
+    ================
+    1. Theme Default CSS
+    2. Header CSS
+        2.1 Header Top CSS
+        2.2 Header Middle CSS
+        2.3 Header Bottom CSS
+        2.4 Vertical Mobile Menu CSS
+    3. Categorie Menu & Slider Area CSS
+    
+-----------------------------------------------------*/
+
+/* googel font Open Sans & Raleway */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800|Raleway:300,400,500,600,700,800,900');
+/*----------------------------------------*/
+
+/* 1 Header CSS
+/*----------------------------------------*/
+.absolute-header {
+    left: 0;
+    position: absolute;
+    top: 30px;
+    z-index: 99;
+    width: 100%;
+}
+
+.header-sticky.sticky {
+    background: #fff none repeat scroll 0 0;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 15px 0;
+    -webkit-animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
+    z-index: 1049;
+}
+
+.sticky .logo img {
+    max-width: 110px;
+}
+
+.sticky .primary-menu-list > li a {
+    font-size: 14px;
+}
+
+.primary-menu-list > li {
+    margin-left: 30px;
+    position: relative;
+}
+
+.primary-menu-list > li a {
+    color: #222;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 5px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.primary-menu-list li:hover > a {
+    color: #000;
+}
+
+.primary-menu-list > li > a::before {
+    background: #222 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+    position: absolute;
+    top: 26px;
+    -webkit-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+    width: 100%;
+}
+
+.primary-menu-list > li:hover > a::before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.primary-menu-list > li:first-child > a::before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.primary-menu-list > li.buy-now > a:before {
+    display: none;
+}
+
+.primary-menu-list > li.buy-now > a:hover {
+    background: transparent;
+    color: #384a85;
+}
+
+/* dropdown css start */
+
+.primary-menu-list > li ul.ht-dropdown.ht-dropdown {
+    background: #fff;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    padding: 15px;
+    -webkiit-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
+    width: 214px;
+    visibility: hidden;
+    z-index: 999;
+    -webkit-transition: all 700ms ease 0s;
+    transition: all 700ms ease 0s;
+    -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.primary-menu-list li:hover > ul.ht-dropdown {
+    opacity: 1;
+    visibility: visible;
+    -webkiit-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.primary-menu-list > li > ul.ht-dropdown > li a {
+    font-size: 12px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.primary-menu-list > li > ul.ht-dropdown > li a:hover {
+    padding-left: 5px;
+}
+
+.primary-menu-list > li > ul.ht-dropdown > li:last-child a {
+    border-bottom: none;
+}
+
+.primary-menu-list > li ul.ht-dropdown li {
+    position: relative;
+}
+
+.primary-menu-list > li i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.primary-menu-list > li > ul.ht-dropdown > li ul.sub-menu {
+    left: 100%;
+    top: 0;
+}
+
+/* trigger menu css */
+.trigger-menu-icon {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    display: inline-block;
+    height: 35px;
+    line-height: 30px;
+    margin: 0;
+    outline: medium none;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle;
+    width: 30px;
+}
+
+.trigger-menu-icon span {
+    display: block;
+    height: 3px;
+    background: #Be1d2d;
+    margin: 6px 0;
+    -webkit-transition: all 0.5s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
+    transition: all 0.5s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    width: 100%;
+}
+
+.trigger-menu-icon span:nth-child(2) {
+    width: 90%;
+}
+
+.trigger-menu-icon span:nth-child(3) {
+    width: 70%;
+}
+
+.trigger-menu-icon.is-active span {
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+}
+
+.trigger-menu-icon.is-active span:first-child {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: -9px;
+}
+
+.trigger-menu-icon.is-active span:last-child {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -8px;
+}
+
+.trigger-menu nav.menu ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    white-space: nowrap;
+    padding-right: 50px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
+    transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trigger-menu .slide-menu-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.trigger-menu .slide-menu-inner {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    width: auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.trigger-menu .slide-menu-inner.is-visible ul {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.trigger-menu.transparent-header {
+    padding-top: 50px;
+}
+
+/* Home Video Header css */
+.trigger-menu.is-sticky {
+    padding: 6px 0;
+}
+
+.header-sticky-two.sticky {
+    background: #1c1c1c;
+}
+
+.trigger-menu-style-two span {
+    background: #fff none repeat scroll 0 0;
+}
+
+.menu-style-two > li a {
+    color: #1d1d1d;
+}
+
+.menu-style-two > li > ul.ht-dropdown > li a {
+    color: #303030;
+}
+
+.menu-style-two > li > a::before {
+    background: #E74039;
+}
+
+.menu-style-two li:hover > a {
+    color: #E74039;
+}
+
+.social-style-two.social-style-three li a {
+    color: #fff;
+}
+
+.social-style-two.social-style-three li a:hover {
+    color: #ddd;
+}
+
+/*----------------------------------------*/
+/* 2. Slider CSS
+/*----------------------------------------*/
+.slider-area {
+    position: relative;
+}
+
+.slider-text {
+    z-index: 13;
+    position: relative;
+}
+
+.slider-triangle::before {
+    border-left: 229px solid transparent;
+    border-right: 212px solid transparent;
+    border-top: 366px solid #ededed;
+    content: "";
+    height: 0;
+    left: -73px;
+    position: absolute;
+    top: -39px;
+    width: 0;
+    z-index: -1;
+}
+
+.slider-triangle::after {
+    border-left: 231px solid transparent;
+    border-right: 214px solid transparent;
+    border-top: 369px solid #dedede;
+    content: "";
+    height: 0;
+    left: -75px;
+    position: absolute;
+    top: -40px;
+    width: 0;
+    z-index: -2;
+}
+
+.single-man {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    z-index: 12;
+}
+
+.man-style-two {
+    left: auto;
+    right: 19%;
+}
+
+.cd-headline.clip span {
+    padding: 0;
+}
+
+.cd-headline.clip b {
+    font-weight: 300;
+}
+
+.cd-headline.clip .cd-words-wrapper::after {
+    background-color: #222;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+    color: #222;
+}
+
+.slider-text h5 {
+    font-size: 18px;
+    font-weight: 400;
+    /*letter-spacing: 6px;*/
+    margin-bottom: 10px;
+    font-weight: 600;
+    /*word-spacing: 5px;*/
+}
+
+.slider-text h1 {
+    display: inline-block;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 85px;
+    margin-bottom: 15px;
+}
+
+.slider-text h2 {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+/* Home Perticle css */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Home Video Banner/Slider css */
+.overlay {
+    position: relative;
+}
+
+.overlay::before {
+    background: rgba(0, 0, 0, 0.14) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.bg-white {
+    background-color: #fff;
+}
+.red{color: #E74039;}
+.bg-gray {
+    background-color: #eee!important;
+    border-radius: 0 0 10px 0;
+}
+.p3 {
+    padding: 1rem;
+}
+.shadow-blue {
+    box-shadow: 0 0 30px rgba(0,38,106,.33);
+}
+.rounded {
+    border-radius: 5px;
+}
+.slidertext-style-two h5{
+    color: #E74039;
+}
+.slidertext-style-two h1,
+.slidertext-style-two h2 {
+    color: #E74039;
+}
+
+.slidertext-style-two .cd-headline.clip .cd-words-wrapper::after {
+    background-color: #efefef;
+}
+
+.slidertext-style-two .cd-headline.clip .cd-words-wrapper {
+    color: #efefef;
+}
+
+.slidertext-style-two .transparent-btn {
+    background: #efefef;
+    border-color: #efefef;
+}
+
+.slidertext-style-two .transparent-btn:hover {
+    background: transparent;
+    color: #efefef;
+}
+.slidertext-style-two .transparent-red-btn {
+    background: #E74039;
+}
+
+.slidertext-style-two .transparent-red-btn:hover {
+    
+    color: #F8ae44;
+}
+
+/*----------------------------------------*/
+/* 3. skill area CSS
+/*----------------------------------------*/
+.large-letter {
+    color: #303030;
+    float: left;
+    font-size: 60px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 10px;
+}
+
+.skill-content {
+    overflow: hidden;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+
+.skill .progress-bar {
+    background: #303030 none repeat scroll 0 0;
+    position: relative;
+}
+
+.skill .progress .lead {
+    color: #222;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    text-transform: capitalize;
+    top: -35px;
+    width: 100%;
+    z-index: 99;
+}
+
+.progress-bar > span {
+    color: #303030;
+    font-size: 14px;
+    height: 24px;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    top: -38px;
+    width: auto;
+}
+
+.progress-bar > span::before {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #000;
+    bottom: -8px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.skill .progress {
+    background: #ebebeb none repeat scroll 0 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 13px;
+    margin-bottom: 55px;
+    overflow: visible;
+    position: relative;
+}
+
+.skill .progress:last-child {
+    margin-bottom: 0;
+}
+
+.all-skill {
+    overflow: hidden;
+}
+
+.single-skill {
+    background: #303030 none repeat scroll 0 0;
+    float: left;
+    padding: 80px 0;
+    text-align: center;
+    width: 25%;
+}
+
+.about-content .transparent-btn {
+    font-size: 14px;
+    padding: 10px 25px;
+    margin-top: 35px;
+}
+
+.about-content-two p {
+    padding-right: 120px;
+}
+
+.margin-changer {
+  margin-left: 30px;
+}
+
+.style-change-padding {
+    padding-left: 15px;
+}
+
+.box-layout-content {
+    padding-right: 80px;
+}
+
+.education-desc {
+    padding-left: 15px;
+}
+
+.education-desc p {
+    padding-right: 50px;
+}
+
+.education-year span {
+    font-family: raleway;
+    font-weight: 300;
+}
+
+.education-year h6,
+.education-year h6 span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.education-year h6 span {
+    display: block;
+}
+
+.education-desc h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.work-experience .single-experience:not(:last-child) {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.img-left{left: 0%;
+    max-height: 150%;
+    position: absolute;
+    /* right: 0; */
+    z-index: 0;
+    max-width: 60%;
+    max-height: 100%;}
+/*----------------------------------------*/
+/* 4. Porfolio area CSS
+/*----------------------------------------*/
+.progress-circular .knob {
+    height: 55px !important;
+    margin-left: -102px !important;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio:before {
+    background: rgba(0, 0, 0, 0.8);
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 15;
+    position: absolute;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+.portfolio:hover:before,
+.portfolio:hover .portfolio-hover,
+.portfolio:hover .porfolio-action {
+    opacity: 1;
+}
+
+.portfolio:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.portfolio:hover img,
+.portfolio:before,
+.portfolio-hover h3 a:before {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio:hover .porfolio-action {
+    margin-left: 0;
+}
+
+.portfolio-hover {
+    margin-top: 20px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+    width: 100%;
+    z-index: 17;
+}
+
+.portfolio:hover .portfolio-hover {
+    margin-top: 0;
+}
+
+.portfolio-hover h3 a {
+    color: #eeeeee;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.portfolio-hover h3 {
+    display: inline-block;
+    line-height: 24px;
+    position: relative;
+}
+
+.work-style-two .portfolio-hover h3 a {
+    font-size: 22px;
+}
+
+.portfolio-hover h3 a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 1px;
+    background: #eee;
+    display: block;
+
+}
+
+.portfolio-hover h3:hover a:before {
+    width: 100%;
+}
+
+.portfolio-hover p {
+    color: #eee;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-top: 2px;
+}
+
+.porfolio-action {
+    bottom: 30px;
+    left: 40px;
+    margin-left: 30px;
+    position: absolute;
+    opacity: 0;
+    z-index: 17;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.porfolio-action a {
+    color: #eee;
+    font-size: 25px;
+    margin-right: 28px;
+}
+
+.porfolio-action a:last-child {
+    margin-right: 0;
+}
+
+.porfolio-action a:hover,
+.portfolio-hover h3 a:hover {
+    color: #fff;
+}
+
+.portfolio {
+    margin-top: 30px;
+    position: relative;
+}
+
+.portfolio-menu button.active {
+    color: #000;
+}
+
+.portfolio-menu button {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-right: 15px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.portfolio-menu button:hover {
+    color: #000;
+}
+
+/* portfolio details css */
+.same-style {
+    padding: 40px 0;
+}
+
+.project-brief .single-quote {
+    margin-top: 20px;
+}
+
+.single-quote {
+    padding-left: 25px;
+    position: relative;
+}
+
+.project-design-video img {
+    width: 100%;
+}
+
+.text-mark {
+    color: #444;
+    font-family: raleway;
+    font-weight: 600;
+}
+
+.single-quote::before {
+    content: "";
+    font-family: "icofont";
+    left: 0;
+    position: absolute;
+}
+
+.project-info:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.related-project .portfolio-hover h3 a {
+    font-size: 20px;
+}
+
+.project-info h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.project-info p {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.related-img img {
+    width: 100%;
+}
+
+.portfolio-dwonload li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.portfolio-dwonload li a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+}
+
+.portfolio-dwonload li a:hover {
+    color: #000;
+}
+
+.portfolio-dwonload li img {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+    width: auto;
+}
+
+.related-img.portfolio {
+    margin-top: 0;
+}
+
+.video-popup {
+    color: #fafafa;
+    display: inline-block;
+    font-size: 60px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 22;
+}
+
+.video-popup:hover {
+    color: #fff;
+}
+
+/* quick view modal css */
+.modal-content {
+    padding: 50px 30px;
+}
+
+.modal-large {
+    max-width: 1050px;
+}
+
+.cus-modal-thumb img {
+    width: 100%;
+}
+
+.close.modal-close {
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    color: #222;
+    font-size: 24px;
+    height: 30px;
+    line-height: 28px;
+    opacity: 1;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    z-index: 11;
+}
+
+.close.modal-close:hover {
+    background: #303030;
+    color: #fff;
+    border-color: #303030;
+}
+
+.cus-modal-content {
+    padding-left: 15px;
+    padding-right: 100px;
+}
+
+.social-icons.social-icons--rounded ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.cus-modal-content b a {
+    color: #303030;
+}
+
+.social-icons.social-icons--rounded ul li a {
+    border: 1px solid #303030;
+    border-radius: 100%;
+    color: #303030;
+    display: block;
+    font-size: 14px;
+    height: 35px;
+    line-height: 36px;
+    text-align: center;
+    width: 35px;
+}
+
+.social-icons.social-icons--rounded ul li a:hover {
+    background: #303030;
+    color: #fff;
+}
+
+.cus-modal-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.cus-modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-large {
+    margin: 8.75rem auto;
+}
+
+/*----------------------------------------*/
+/* 5. Testmonila CSS
+/*----------------------------------------*/
+.testmonial-active.owl-carousel .owl-item img {
+    border-radius: 100%;
+    height: 100px;
+    margin: auto;
+    max-width: 100px;
+    width: 100%;
+}
+
+.testmonial-content p {
+    color: #898989;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+    margin: 25px auto;
+    width: 63%;
+}
+
+.testmonial-active {
+    z-index: 15;
+}
+.casestudy-header h3 {
+  border-bottom: 4px solid #F8ae44;
+    width:200px;
+}
+.casestudy-header h3:after {
+  content: '';
+  display: block;
+  border-bottom: 4px solid #EC1C24;
+  margin-bottom: -4px;
+  max-width: 180px;
+}
+.overlay-testmonial .testmonial-content h3,
+.overlay-testmonial .testmonial-content p,
+.overlay-testmonial .testmonial-content span {
+    color: #fff;
+}
+
+.overlay.overlay-testmonial:before {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+}
+
+.testmonial-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:#E74039;
+}
+
+.testmonial-content span {
+    text-transform: capitalize;
+    color: #606060;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/*----------------------------------------*/
+/* 6. Footer CSS
+/*----------------------------------------*/
+.footer-top {
+    border-bottom: 1px solid #555;
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+}
+
+.footer-top p {
+    color: #bcbcbc;
+    margin: auto;
+    width: 53%;
+}
+
+.copyright-text p {
+    color: #bcbcbc;
+    line-height: 1;
+}
+
+.copyright-text a {
+    color: #bcbcbc;
+}
+
+.copyright-text a:hover,
+.social-footer li a:hover {
+    color: #fff;
+}
+
+.social-footer li a {
+    color: #bcbcbc;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.slider-social li a {
+    margin-left: 0;
+    margin-bottom: 15px;
+    display: block;
+    color: #989898;
+}
+
+.slider-social li a:hover {
+    color: #fff;
+}
+
+.slider-social {
+    bottom: 75px;
+    left: 75px;
+    position: absolute;
+    z-index: 13;
+}
+
+.social-style-two {
+    right: 75px;
+    left: auto;
+}
+
+.social-style-two li {
+    display: inline-block;
+}
+
+.social-style-two li a {
+    margin-bottom: 0;
+    margin-left: 15px;
+    color: #989898;
+}
+
+.social-style-four li a {
+    color: #707070;
+}
+
+.social-style-two li a:hover {
+    color: #222;
+}
+
+.footer-style-two .social-footer li a {
+    margin: 0 15px;
+}
+
+.search-box-style-two {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.newsletter-box.footer-box {
+    margin-bottom: 20px;
+}
+
+.newsletter-box.footer-box input {
+    background: transparent none repeat scroll 0 0;
+    border-color: #555;
+}
+
+.newsletter-box.footer-box button {
+    background: transparent none repeat scroll 0 0;
+    color: #777;
+    font-size: 22px;
+    border: 1px solid #555;
+    border-left: transparent;
+}
+
+.newsletter-box.footer-box button:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.newsletter-box.footer-box input:focus,
+.newsletter-box.footer-box button:hover {
+    border-color: #777;
+}
+
+.footer-style-two .footer-top {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.footer-bottom-two {
+    border-top: 1px solid #555;
+    margin-top: 30px;
+}
+
+.single-footer h3 {
+    color: #bcbcbc;
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 18px;
+}
+
+.single-footer p {
+    color: #8e8e8e;
+}
+
+/*----------------------------------------*/
+/* 7. Breadcrumb CSS
+/*----------------------------------------*/
+.main-breadcrumb {
+    padding-top: 50px;
+    position: relative;
+}
+
+.breadcrumb-list {
+    background: transparent none repeat scroll 0 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 0;
+    top: 90px;
+}
+
+.breadcrumb-heading {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    word-spacing: 4px;
+}
+
+.breadcrumb-item a,.breadcrumb-item {
+    color: #818181;
+    font-family: raleway;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item a:hover {
+    color: #555;
+}
+
+/* portfolio breadcrumb css */
+.pfolio-breadcrumb-list {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pfolio-breadcrumb-list li a {
+    color: #888;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 0 15px;
+    height: 40px;
+}
+
+.pfolio-breadcrumb-list li:first-child a {
+    border-right: 1px solid #dedede;
+}
+
+.pfolio-breadcrumb-list li:last-child a {
+    border-left: 1px solid #dedede;
+}
+
+.pfolio-breadcrumb-list li.active a,
+.pfolio-breadcrumb-list li:hover a {
+    color: #555;
+}
+
+/*----------------------------------------*/
+/* 8. Expert Area CSS
+/*----------------------------------------*/
+.expert-sec {
+    padding-left: 40px;
+}
+
+.expert-sec .sec-style-two p {
+    width: 100%;
+}
+
+.single-expert span {
+    color: #e9e9e9;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.single-expert h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 17px 0 15px;
+}
+
+/*----------------------------------------*/
+/* 9. Brand Area CSS
+/*----------------------------------------*/
+.brand-active.owl-carousel img {
+    display: block;
+    margin: auto;
+    width: auto;
+    opacity: 0.5;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.brand-active.owl-carousel.brand-two img {
+    opacity: 0.9;
+}
+
+.brand-active.owl-carousel img:hover {
+    opacity: 1;
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.breadcrumb-bg {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+}
+
+
+/*----------------------------------------*/
+/* 10. Contact Area CSS
+/*----------------------------------------*/
+.contact-info {
+    padding: 0 15px 0 115px;
+}
+
+.contact-header {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.contact-header.default-header {
+    font-size: 24px;
+}
+
+.project-sidebar .contact-header {
+    border-bottom: 2px solid #303030;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.contact-header span {
+    font-weight: 700;
+}
+
+.contact-form label,
+.contact-form label {
+    font-size: 14px;
+    line-height: 1;
+    color: #606060;
+}
+
+.address-wrapper input,
+.address-wrapper textarea {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 10px;
+    max-width: 430px;
+}
+
+.address-wrapper input {
+    height: 35px;
+}
+
+.address-wrapper textarea {
+    height: 135px;
+}
+
+.address-wrapper input:focus,
+.address-wrapper textarea:focus {
+    border-color: #303030;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff;
+}
+
+.send-btn {
+    background: #303030 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    border: 1px solid transparent;
+    font-family: raleway;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 8px 25px 7px;
+    text-transform: uppercase;
+}
+
+.send-btn:hover {
+    color: #303030;
+    border-color: #303030;
+    background: transparent;
+}
+
+.contact-form h6 {
+    color: #303030;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    text-transform: inherit;
+}
+
+/*----------------------------------------*/
+/* 11. Support Area CSS
+/*----------------------------------------*/
+.support-desc h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.support-desc span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #606060;
+}
+
+/*----------------------------------------*/
+/* 12. Service  Area CSS
+/*----------------------------------------*/
+.main-service-area {
+    padding: 0 215px;
+}
+
+.main-service-area .single-expert p {
+    padding-right: 55px;
+}
+
+.service-slogan p {
+    padding-right: 100px;
+}
+
+.main-service-area .single-expert span {
+    color: #303030;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+/*----------------------------------------*/
+/* 13. Service Package Area CSS
+/*----------------------------------------*/
+.service-img {
+    margin-bottom: 120px;
+}
+
+.service-package .row [class*="col"] {
+    padding: 0 25px;
+}
+
+.service-package .row {
+    margin: 0 -25px;
+    padding: 0 70px;
+}
+
+.single-package {
+    background: #f3f3f3 none repeat scroll 0 0;
+    padding: 30px;
+    position: relative;
+}
+
+.package-header h5 {
+   
+    /*text-transform: uppercase;*/
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.package-header img {
+    margin: 20px 0 15px;
+}
+
+.single-package.active {
+    background: #eee none repeat scroll 0 0;
+}
+
+.package-header span {
+    border: 1px solid #303030;
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 36px;
+    height: 80px;
+    line-height: 80px;
+    margin: 25px 0 20px;
+    width: 80px;
+}
+
+.package-header h3 {
+    color: #303030;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: open sans;
+}
+
+.package-list {
+    padding-left: 40px;
+}
+
+.package-list li a {
+    color: #222;
+    display: block;
+    font-size: 15px;
+    padding-bottom: 20px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.package-list a::before {
+    content: "";
+    font-family: "icofont";
+    font-size: 18px;
+}
+
+.select-btn {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 28px;
+    text-transform: uppercase;
+}
+
+.select-btn.active,
+.select-btn:hover {
+    background: #303030 none repeat scroll 0 0;
+    color: #fff;
+}
+
+/*----------------------------------------*/
+/* 14. Blog  Area CSS
+/*----------------------------------------*/
+.single-blog {
+    background: #fff none repeat scroll 0 0;
+}
+
+.blog-area [class*="col-"] {
+    margin-bottom: 40px;
+}
+
+.blog-btn {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding: 0 20px 20px;
+}
+
+.single-blog {
+    background: #fff none repeat scroll 0 0;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.blog-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.blog-desc {
+    padding: 20px 20px 15px;
+}
+
+.meta-box {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.single-blog img {
+    width: 100%;
+}
+
+.blog-img a,
+.blog-hero-img {
+    display: block;
+    position: relative;
+}
+
+.meta-box li {
+    color: #666666;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 25px;
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+
+.meta-box li i {
+    margin-right: 8px;
+}
+
+.meta-box li a {
+    color: #555;
+    display: inline-block;
+    font-family: raleway;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-family: raleway;
+}
+
+.blog-title {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.blog-title a {
+    color: #303030;
+}
+
+.read-more {
+    color: #303030;
+    display: inline-block;
+    font-family: raleway;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 0;
+    position: relative;
+}
+
+.read-more:hover,
+.blog-title a:hover,
+.blog-desc li a:hover {
+    color: #606060;
+}
+
+/* blog details css */
+.details-meta li,
+.details-meta li a {
+    font-size: 15px;
+}
+
+.details-meta {
+    margin-bottom: 30px;
+}
+
+.blog-dtl-header {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.training-topics li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.training-topics li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.training-topics li::before {
+    content: "";
+    font-family: "themify";
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+}
+
+.training-topics li a {
+    color: #606060;
+    display: block;
+    font-size: 14px;
+}
+
+.blog-blockquote {
+    margin: 45px 0;
+}
+
+.blog-blockquote p {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 12%;
+}
+
+.blockquote-footer {
+    margin-top: 10px;
+}
+
+.sidebar-header {
+    border-bottom: 4px double #303030;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.author .single-comment {
+    margin-bottom: 0;
+}
+
+.author h6 {
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.author .single-comment {
+    background: #fafafa none repeat scroll 0 0;
+    margin-bottom: 60px;
+    padding: 50px 40px;
+}
+
+.single-comment {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.comment-img {
+    margin-right: 20px;
+}
+
+.comment-desc h6 a {
+    color: #303030;
+}
+
+.training-topics li a:hover {
+    color: #000;
+}
+
+.comment-desc h6 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.comment-title {
+    margin-bottom: 10px;
+}
+
+.comment-title span {
+    color: #a2a2a2;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.comment-reply a {
+    color: #303030;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.comment-reply a:hover,
+.comment-desc h6 a:hover {
+    color: #505050;
+}
+
+.reply-comment {
+    margin-left: 135px;
+}
+
+.tags-social {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.t-list {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.tags-social li a {
+    color: #555;
+    font-size: 15px;
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+
+.tags-social li a:hover,
+.pagination li a:hover {
+    color: #000;
+}
+
+.pagination li a {
+    color: #6d6d6d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pagination li a i.fa-long-arrow-left {
+    margin-right: 5px;
+}
+
+.pagination li a i.fa-long-arrow-right {
+    margin-left: 5px;
+}
+
+.submit-review .form-group {
+    margin-bottom: 30px;
+}
+
+.submit-review .form-group input,
+.submit-review textarea {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: currentcolor currentcolor #eee;
+    -o-border-image: none;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    font-size: 14px;
+    padding-left: 0;
+}
+
+.submit-review .form-group {
+    margin-bottom: 45px;
+}
+
+.submit-review .form-group input:focus,
+.submit-review textarea:focus {
+    border-color: #384a85;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.leave-reply {
+    font-family: open sans;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.submit-review textarea {
+    height: 150px;
+}
+
+.transparent-btn.blue-btn.send-now {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 0;
+    padding: 10px 28px;
+    background: #303030;
+}
+
+.transparent-btn.blue-btn.send-now:hover {
+    color: #303030;
+    border-color: #303030;
+    background: transparent;
+}
+
+/* blog sidebar css */
+.right-sidebar {
+    padding-left: 25px;
+}
+
+
+.single-recent-post {
+    overflow: hidden;
+}
+
+.recent-img {
+    float: left;
+    padding-right: 15px;
+    width: 100px;
+}
+
+.recent-desc {
+    overflow: hidden;
+}
+
+.recent-img img {
+    width: 100%;
+}
+
+.recent-desc span {
+    color: #888;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.recent-desc h6 {
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.recent-desc h6 a {
+    color: #353535;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.all-recent-post .single-recent-post:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.categorie-list li {
+    font-size: 15px;
+    position: relative;
+}
+
+.categorie-list li::after {
+    border: 1px dashed #ddd;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 11px;
+    width: 100%;
+    z-index: -1;
+}
+
+.categorie-list li a {
+    background: #fff none repeat scroll 0 0;
+    color: #696969;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 20px;
+    text-transform: capitalize;
+}
+
+.categorie-list a::before {
+    content: "";
+    font-family: FontAwesome;
+    font-size: 13px;
+    padding-right: 5px;
+}
+
+.categorie-list li a:hover,
+.recent-desc h6 a:hover {
+    color: #505050;
+}
+
+.categorie-list li span {
+    float: right;
+    background: #fff;
+    padding-left: 20px;
+}
+
+.categorie-list li:not(:last-child) {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.tag-list {
+    margin: 0 -6px;
+}
+
+.tag-list li a {
+    background-color: transparent;
+    border: 1px solid #efefef;
+    color: #696969;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0 6px 15px;
+    padding: 8px 20px;
+    text-transform: capitalize;
+}
+
+.tag-list li a:hover {
+    background: #303030;
+    color: #fff;
+}
+
+.instagram-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.instagram-img li {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.instagram-img a img {
+    width: 100%;
+}
+
+/*----------------------------------------*/
+/* 15. Subscribe Area CSS
+/*----------------------------------------*/
+.newsletter-box {
+    margin: auto;
+    max-width: 380px;
+    position: relative;
+}
+
+.newsletter-box .subscribe {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #777;
+    float: left;
+    font-size: 15px;
+    height: 50px;
+    padding: 10px 15px;
+    width: calc(100% - 70px);
+}
+
+.newsletter-box.sidebar-search-box {
+    margin-bottom: 60px;
+    margin-top: 0;
+    max-width: 100%;
+}
+
+.newsletter-box .submit {
+    background: #303030 none repeat scroll 0 0;
+    border: 0 none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+    width: 70px;
+}
+
+.newsletter-box .submit:hover {
+    background: #000;
+}

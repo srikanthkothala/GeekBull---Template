@@ -1,0 +1,602 @@
+/*=============== Extra Large(xl) Device ===============*/
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .single-man img {
+        max-width: 350px;
+    }
+    .full-screen {
+        height: 80vh;
+    }
+    .slider-text h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .contact-info {
+        padding: 0 15px 0 80px;
+    }
+
+    .single-expert h3 {
+        font-size: 15px;
+    }
+    .main-service-area .single-expert p {
+        padding-right: 0;
+    }
+    .sec-style-three p {
+        width: 40%;
+    }
+    .box-layout {
+        margin: 0 50px;
+    }
+    .slider-triangle::before {
+        left: 0;
+    }
+    .slider-triangle::after {
+        left: -2px;
+    }
+    .main-service-area {
+        padding: 0 30px;
+    }
+
+}
+
+/*=============== Large(LG) Device ===============*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .package-list {
+        padding-left: 35px;
+    }
+    .blog-dtl-header {
+        font-size: 25px;
+    }
+    .training-topics li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .sec-style-three p {
+        margin: auto;
+        width: 60%;
+    }
+    .box-layout {
+        margin: 0;
+    }
+    .slider-triangle::before {
+        left: 242px;
+    }
+    .slider-triangle::after {
+        left: 240px;
+    }
+    .service-slogan p {
+        padding-right: 295px;
+    }
+    .education-year h6 span {
+        display: inline;
+    }
+    .skill-content {
+        margin-left: 20px;
+    }
+    .box-layout {
+        margin: 0 15px;
+    }
+    .slider-text h1 {
+        font-size: 65px;
+        line-height: 65px;
+    }
+    .slider-text h2 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .right-sidebar {
+        padding-left: 0;
+    }
+    .recent-desc h6 a {
+        font-size: 14px;
+    }
+    /*== media query margin ==*/
+    .mb-lg-30 {
+        margin-bottom: 30px;
+    }
+    .mb-lg-40 {
+        margin-bottom: 40px;
+    }
+}
+
+/*=============== 0 to 1199 Device ===============*/
+@media (max-width: 1199px) {
+    .social-style-two li a {
+        margin: 0 10px;
+    }
+    .full-screen {
+        height: 80vh;
+    }
+    .absolute-header {
+        top: 30px;
+    }
+    .contact-info {
+        padding: 0 15px 0 30px;
+    }
+    #map {
+        height: 620px;
+    }
+    .main-service-area .single-expert p {
+        padding-right: 0;
+    }
+    .single-expert h3 {
+        font-size: 15px;
+    }
+    .service-package .row {
+        margin: 0 -15px;
+        padding: 0;
+    }
+    .blog-title {
+        font-size: 14px;
+    }
+    .service-img {
+        margin-bottom: 70px;
+    }
+    .blogquote {
+        padding: 80px;
+    }
+    .contact-header {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .work-style-two .portfolio-hover h3 a {
+        font-size: 16px;
+    }
+    .work-style-two .portfolio-hover p {
+        font-size: 14px;
+    }
+    .work-style-two .porfolio-action {
+        bottom: 15px;
+        left: 15px;
+    }
+    .work-style-two .porfolio-action a {
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+    .main-service-area {
+        padding: 0 30px;
+    }
+    .box-layout-content {
+        padding-right: 0;
+    }
+    .slider-text.slider-triangle {
+        text-align: center;
+    }
+    /*== media query margin ==*/
+    .mb-all-lg-40 {
+        margin-bottom: 40px;
+    }
+}
+
+/*=============== Medium (md) Device ===============*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-content p.mb-30 {
+        margin-bottom: 15px;
+    }
+    .skill-content {
+        margin-left: 30px;
+    }
+    .footer-top p {
+        margin: auto;
+        width: 75%;
+    }
+    .work-style-two .portfolio-hover h3 a {
+        line-height: 16px;
+    }
+    .slider-triangle::before {
+        left: 120px;
+        top: -29px;
+    }
+    .slider-triangle::after {
+        left: 118px;
+        top: -30px;
+    }
+
+    /*== media query margin ==*/
+    .mb-md-30 {
+        margin-bottom: 30px;
+    }
+    .mb-md-40 {
+        margin-bottom: 40px;
+    }
+    .mb-md-80 {
+        margin-bottom: 80px;
+    }
+    .mt-md-40 {
+        margin-top: 40px;
+    }
+}
+
+/*=============== 0 to 991 ===============*/
+@media (max-width: 991px) {
+    .portfolio-hover h3 a {
+        font-size: 17px;
+    }
+    .porfolio-action a {
+        font-size: 18px;
+        margin-right: 15px;
+    }
+    .section-title p {
+        margin: auto;
+        width: 100%;
+    }
+    .portfolio-hover {
+        width: 100%;
+    }
+    .logo img {
+        max-width: 120px;
+    }
+    .slider-text h5 {
+        font-size: 22px;
+        letter-spacing: 2px;
+        word-spacing: 0;
+    }
+    .slider-text h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    .slider-text h2 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .transparent-btn {
+        font-size: 16px;
+        margin-top: 30px;
+        padding: 10px 30px;
+    }
+    .cus-modal-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .cus-modal-title {
+        font-size: 20px;
+    }
+    .sticky .mean-container .mean-bar {
+        top: 43px;
+    }
+    .sticky .mean-container a.meanmenu-reveal {
+        top: -41px;
+    }
+    .expert-sec {
+        padding-left: 0;
+    }
+    .skill-content {
+        margin-left: 0;
+    }
+    .ptb-150 {
+        padding: 80px 0;
+    }
+    .pt-150 {
+        padding-top: 80px;
+    }
+    .pb-150 {
+        padding-bottom: 80px;
+    }
+    .ptb-100 {
+        padding: 80px 0;
+    }
+    .pt-100 {
+        padding-top: 80px;
+    }
+    .pb-110 {
+        padding-bottom: 40px;
+    }
+    .breadcrumb-heading {
+        font-size: 35px;
+    }
+    .breadcrumb-item a {
+        font-size: 13px;
+    }
+    .support-desc h6 {
+        font-size: 16px;
+    }
+    .support-desc span {
+        font-size: 14px;
+    }
+    .contact-info {
+        padding: 0 15px 0 15px;
+    }
+    #map {
+        height: 450px;
+    }
+    .contact-info {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+    .reply-comment {
+        margin-left: 0;
+    }
+    .sec-style-three {
+        padding: 0 55px;
+    }
+    .right-sidebar {
+        padding-left: 0;
+    }
+    .header-sticky-two .mean-container a.meanmenu-reveal span {
+        background: #fff;
+    }
+    .header-sticky-two .mean-container a.meanmenu-reveal {
+        color: #fff;
+    }
+    .education-desc {
+        padding-left: 0;
+    }
+    .about-content-two p {
+        padding-right: 0;
+    }
+    .instagram-img li {
+        -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    }
+    .box-layout {
+        margin: 0;
+    }
+    .style-change-padding {
+        padding-left: 0;
+    }
+    .margin-changer {
+      margin-left: 0;
+    }
+    /*== media query margin ==*/
+    .mb-all-15 {
+        margin-bottom: 15px;
+    }
+    .mb-all-30 {
+        margin-bottom: 30px;
+    }
+    .mb-all-40 {
+        margin-bottom: 40px;
+    }
+    .mt-all-30 {
+        margin-top: 30px;
+    }
+    .mt-all-40 {
+        margin-top: 40px;
+    }
+    .pr-all-50 {
+        padding-right: 50px;
+    }
+    .mb-all-80 {
+        margin-bottom: 80px;
+    }
+    .mt-all-80 {
+        margin-top: 80px;
+    }
+}
+
+/*=============== Small (sm) Device ===============*/
+@media (max-width: 767px) {
+    .full-screen {
+        height: auto;
+        padding: 130px 0;
+    }
+    .social-style-two {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .center-items {
+        text-align: center;
+    }
+    .bg-2 {
+        background: #dad8e5;
+    }
+    .bg-1 {
+        background: #dbdbdb;
+    }
+    .porfolio-action {
+        bottom: 15px;
+        left: 15px;
+    }
+    .portfolio-hover p {
+        font-size: 16px;
+        padding-top: 0px;
+    }
+    .skill-content {
+        margin-left: 0;
+    }
+    .portfolio-menu button {
+        letter-spacing: 0;
+        margin-right: 15px;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    .section-title h2 {
+        font-size: 25px;
+    }
+    .testmonial-content p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .footer-top p {
+        width: 100%;
+    }
+    .social-footer li a {
+        margin: 0 15px;
+    }
+    .modal-large {
+        margin: 4.75rem auto;
+    }
+    .breadcrumb-list {
+        top: 5px;
+    }
+    .service-slogan p {
+        padding-right: 0;
+    }
+    .package-list {
+        padding-left: 10px;
+    }
+    .service-package .row [class*="col"] {
+        padding: 0 15px;
+    }
+    .service-package .row [class*="col"] {
+        padding: 0 15px;
+    }
+    .blog-dtl-header {
+        font-size: 20px;
+    }
+    .single-comment {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .single-footer {
+        text-align: center;
+    }
+    .single-footer h3 {
+        font-size: 16px;
+    }
+    .slider-triangle::before,
+    .slider-triangle::after {
+        display: none;
+    }
+    /*== small device margin ==*/
+    .mb-sm-40 {
+        margin-bottom: 40px;
+    }
+    .mt-sm-40 {
+        margin-top: 40px;
+    }
+    .mt-sm-15 {
+        margin-top: 10px;
+    }
+    .mt-sm-30 {
+        margin-top: 30px;
+    }
+    .mb-sm-30 {
+        margin-bottom: 30px;
+    }
+    .mb-sm-20 {
+        margin-bottom: 20px;
+    }
+    .mb-sm-15 {
+        margin-bottom: 15px;
+    }
+
+}
+
+/*=============== Mobile Device ===============*/
+@media (max-width: 575px) {
+    .slider-text h5 {
+        font-size: 22px;
+        letter-spacing: 2px;
+        word-spacing: 0;
+    }
+    .slider-text h1 {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+    .slider-text h2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .slider-text .transparent-btn {
+        font-size: 16px;
+        padding: 8px 25px;
+        margin-top: 20px;
+    }
+    .porfolio-action {
+        bottom: 30px;
+        left: 30px;
+    }
+    .portfolio-hover h3 a {
+        font-size: 20px;
+    }
+    .contact-header {
+        font-size: 25px;
+    }
+    .contact-header.default-header {
+        font-size: 22px;
+    }
+    .package-list {
+        margin: auto;
+        max-width: 175px;
+        padding-left: 0;
+    }
+    .main-service-area .single-expert p {
+        padding-right: 60px;
+    }
+    .portfolio-menu button {
+        ;
+        margin-right: 12px;
+    }
+    .section-title h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .transparent-btn {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    .single-expert h3 {
+        font-size: 16px;
+        margin: 12px 0;
+    }
+    .single-expert span {
+        font-size: 25px;
+    }
+    .breadcrumb-heading {
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+    .education-desc {
+        margin-top: 10px;
+    }
+    .education-year h6 span {
+        display: inline;
+    }
+    .blog-dtl-header {
+        line-height: 28px;
+    }
+    .bg-3 {
+        background: url(../img/slider/slider-3.jpg) no-repeat fixed top center / cover !important;
+    }
+    /*== 575-small device margin ==*/
+    .mb-xsm-40 {
+        margin-bottom: 40px;
+    }
+    .mb-xsm-30 {
+        margin-bottom: 30px;
+    }
+}
+
+/*=============== Extra Small Mobile Device ===============*/
+@media (max-width: 420px) {
+    .main-service-area {
+        padding: 0;
+    }
+    .blogquote {
+        padding: 60px;
+    }
+    .author .single-comment {
+        padding: 35px 15px;
+    }
+    .author h6 {
+        margin-top: 0;
+    }
+    .sec-style-three {
+        padding: 0px 15px;
+    }
+    .education-desc h3 {
+        font-size: 14px;
+    }
+    .education-year h6,
+    .education-year h6 span {
+        font-size: 14px;
+    }
+    .instagram-img li {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+    /*== very xtra small mobile device margin ==*/
+    .mb-xxs-30 {
+        margin-bottom: 30px;
+    }
+}
