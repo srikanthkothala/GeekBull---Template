@@ -1,5 +1,5 @@
 /*--------------------------------------------------
-Template Name: smarto;
+Template Name: GeekBull;
 Description: Creative Portfolio Bootstrap 4 Template;
 -----------------------------------------------------
 
@@ -15,8 +15,9 @@ Description: Creative Portfolio Bootstrap 4 Template;
     
 -----------------------------------------------------*/
 
-/* googel font Open Sans & Raleway */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800|Raleway:300,400,500,600,700,800,900');
+/* googel font Rooboto Slab & Roboto */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 /*----------------------------------------*/
 
 /* 1 Header CSS
@@ -582,7 +583,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
 }
 
 .education-year span {
-    font-family: raleway;
+    font-family: 'Roboto Slab', serif;
     font-weight: 300;
 }
 
@@ -799,7 +800,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
 
 .text-mark {
     color: #444;
-    font-family: raleway;
+    font-family: 'Roboto Slab', serif;
     font-weight: 600;
 }
 
@@ -1173,7 +1174,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
 
 .breadcrumb-item a,.breadcrumb-item {
     color: #818181;
-    font-family: raleway;
+    font-family: 'Roboto Slab', serif;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
@@ -1340,7 +1341,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
     border: medium none;
     color: #fff;
     border: 1px solid transparent;
-    font-family: raleway;
+    font-family: 'Roboto Slab', serif;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0;
@@ -1455,7 +1456,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 20px;
-    font-family: open sans;
+    font-family: 'Roboto', sans-serif;
 }
 
 .package-list {
@@ -1565,13 +1566,13 @@ Description: Creative Portfolio Bootstrap 4 Template;
 .meta-box li a {
     color: #555;
     display: inline-block;
-    font-family: raleway;
+    font-family: 'Roboto Slab', serif;
     font-size: 13px;
     font-weight: 500;
     line-height: 25px;
     margin-right: 20px;
     text-transform: capitalize;
-    font-family: raleway;
+    font-family: 'Roboto Slab', serif;
 }
 
 .blog-title {
@@ -1591,7 +1592,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
 .read-more {
     color: #303030;
     display: inline-block;
-    font-family: raleway;
+    font-family: 'Roboto Slab', serif;
     font-size: 14px;
     font-weight: 600;
     padding-top: 0;
@@ -1807,7 +1808,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
 }
 
 .leave-reply {
-    font-family: open sans;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 600;
     text-transform: capitalize;
