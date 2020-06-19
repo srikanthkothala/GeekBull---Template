@@ -43,6 +43,10 @@
     .package-list {
         padding-left: 35px;
     }
+    .primary-menu-list > li {
+    margin-left: 20px;
+    position: relative;
+}
     .blog-dtl-header {
         font-size: 25px;
     }
