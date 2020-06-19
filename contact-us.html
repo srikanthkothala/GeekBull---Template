@@ -44,7 +44,6 @@
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 	<![endif]-->
 
-
     <!-- Main Wrapper Start Here -->
     <div class="wrapper">
         <!-- Main Header Area Start -->
@@ -130,9 +129,9 @@
                                 <li><a href="#">HOME</a></li>
                                 <li><a href="#">PRODUCT ENGINEERING</a></li>
                                 <li><a href="#">TECHNOLOGY CONSULTING</a></li>
-                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
                                 <li><a href="#">CAREERS</a></li>
-                                <li><a href="#">contact us</a></li>
+                                <li><a href="contact-us.html">contact us</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -142,127 +141,94 @@
         </header>
         <!-- Main Header Area End -->
         <!-- Banner Area Start -->
-        <div class="slider-area about-bg">
+        <div class="slider-area contact-bg">
             <div class="container">
                 <div class="main-breadcrumb text-center">
-                    <h3 class="breadcrumb-heading red">About Us</h3>
+                    <h3 class="breadcrumb-heading red">Contact Us</h3>
                     <ol class="breadcrumb breadcrumb-list justify-content-md-end justify-content-center">
                       <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item active">About</li>
+                      <li class="breadcrumb-item active">contact</li>
                     </ol>
                 </div>
             </div>
         </div>
         <!-- Banner Area End -->
-       
-        <!-- Expert Area Start -->
-        <div class="expert-area mt-80 pb-150">
+        <!-- Contact Area Start -->
+        <div class="contact-area off-white-bg">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Google Map Start -->
+                        <div class="goole-ma">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.671699540191!2d78.43726231525162!3d17.427536006232025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91fa13d2618d%3A0xe345fac3156e281e!2sGeekBull%20Consulting!5e0!3m2!1sen!2sin!4v1592600073840!5m2!1sen!2sin" width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <!-- Google Map End -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <h3 class="contact-header"><span class="red">Want to connect</span> with us<br> Here is our <span class="red"> contact information</span></h3>
+                            <form id="contact-form" class="contact-form" action="mail.php" method="post">
+                                <h6>Send us a message</h6>
+                                <div class="address-wrapper">
+                                    <div class="address-fname">
+                                        <label>Name</label>
+                                        <input class="form-control" name="name" type="text">
+                                    </div>
+                                    <div class="address-email">
+                                        <label>Email</label>
+                                        <input class="form-control" name="email" type="email">
+                                    </div>
+                                    <label>Message</label>
+                                    <div class="address-textarea">
+                                        <textarea name="message" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="footer-content mail-content clearfix">
+                                    <div class="send-email">
+                                        <input value="send now" class="send-btn" type="submit">
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="form-message"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Area End -->
+        <!-- Support Area Start -->
+        <div class="support-area ptb-100">
             <div class="container">
-                <div class="row align-items-md-center">
-                    <div class="col-lg-6">
-                        <div class="bg-opacity-black-50 expert-img mb-all-40">
-                            <img class="full-img" src="./img/Our-Team.jpg" alt="portfolio-img">
-                            <a class="video-popup" href="#">
-                                <i class="icofont icofont-play-alt-2"></i>
-                            </a>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="support-desc mb-sm-30">
+                            <h6>Contact Number</h6>
+                            <span>+91 40351 12451</span>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="expert-sec">
-                            <!-- Section Title Start -->
-                            <div class="section-title sec-style-two">
-                                <!--<h2 class="red">GeekBull Consulting</h2>-->
-                                <p>Founded in 2014, GeekBull Consulting is a product engineering and technology consulting firm headquartered in Hyderabad, India. With a team of 25 passionate employees, our prime focus is on continuous engineering and complex problem solving using innovative, cutting-edge technologies. We have successfully delivered five world-class solutions to our clients leveraging our expertise in cloud-native applications, microservices, serverless computing, IoT, IIoT and blockchain.</p>
-                                <p>Our vision is to be recognized as a leader in driving digital transformation through the use of next-generation technologies, showcasing our expertise and relentless commitment to our customers.</p>
-                            </div>
-                            <!-- Section Title End -->
-                            <div class="row">
-                                <!-- Single Expert Start -->
-                                <div class="col-md-6">
-                                    <a href="#"><div class="single-expert mb-40">
-                                        <span>01.</span>
-                                        <h3 class="red">PRODUCT ENGINEERING</h3>
-                                        <p>Monitoring product temperature throughout the retail cold chain is challenging.</p>
-                                    </div></a>
-                                </div>
-                                <!-- Single Expert End -->
-                                <!-- Single Expert Start -->
-                                <div class="col-md-6">
-                                    <a href="#"><div class="single-expert mb-40">
-                                        <span>02.</span>
-                                        <h3 class="red">TECHNOLOGY CONSULTING</h3>
-                                        <p>Monitoring product temperature throughout the retail cold chain is challenging. Using our solution</p>
-                                    </div></a>
-                                </div>
-                                <!-- Single Expert End -->
-                                
-                               
-                            </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="support-desc mb-sm-30">
+                            <h6>Address</h6>
+                            <span>4th Floor, Plot Number 35, 8-2-268/K, <br/>
+                                Road Number 2, Sagar Society, Sri Nagar Colony, <br/>
+                                Navodaya Colony, Banjara Hills<br/>
+                                Hyderabad, Telangana 500034<br/>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="support-desc">
+                            <h6>Mail Us</h6>
+                            <span>info@geekbull.in</span>
                         </div>
                     </div>
                 </div>
+                <!-- Row End -->
             </div>
+            <!-- Container End -->
         </div>
-        <!-- Expert Area End -->
-        <!-- Team Area Start -->
-        <div class="skill-area ptb-60 off-white-bg">
-        <div class="container">
-            <h2 class="text-center pb-30">Meet Our Team</h2>
-    <div class="row">
-        <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/team-member-01.jpg" alt="team member" class="img-responsive">
-                </div>
-                <div class="content">
-                    <h3 class="title">Peter Johns</h3>
-                    <span class="post">Web Developer</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/team-member-2.jpg" alt="team member" class="img-responsive">
-                </div>
-                <div class="content">
-                    <h3 class="title">Kelli Smith</h3>
-                    <span class="post">Web Developer</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-       <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-                <div class="pic">
-                    <img src="./img/team-member-01.jpg" alt="team member" class="img-responsive">
-                </div>
-                <div class="content">
-                    <h3 class="title">Peter Johns</h3>
-                    <span class="post">Web Developer</span>
-                    <ul class="social">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-        </div>
-        <!-- Team Area End -->
-       <!-- Footer Start -->
+        <!-- Support Area End -->
+        <!-- Footer Start -->
         <footer class="footer-area pt-100 light-black-bg footer-style-two">
             <div class="container">
                 <div class="row align-items-center">

@@ -1362,6 +1362,15 @@ Description: Creative Portfolio Bootstrap 4 Template;
     display: flex;
     height: 400px;
 }
+.contact-bg{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+}
 /*----------------------------------------*/
 /* 10. Contact Area CSS
 /*----------------------------------------*/
