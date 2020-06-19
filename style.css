@@ -419,6 +419,9 @@ Description: Creative Portfolio Bootstrap 4 Template;
 .bg-white {
     background-color: #fff;
 }
+.module{padding: 0px;
+    z-index: 1;
+    width: 100%;}
 .red{color: #E74039;}
 .bg-gray {
     background-color: #eee!important;
@@ -611,12 +614,12 @@ Description: Creative Portfolio Bootstrap 4 Template;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-.img-left{left: 0%;
+.img-left{left: -6%;
     max-height: 150%;
     position: absolute;
     /* right: 0; */
     z-index: 0;
-    max-width: 60%;
+    max-width: 71%;
     max-height: 100%;}
 /*----------------------------------------*/
 /* 4. Porfolio area CSS
@@ -1170,6 +1173,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
     font-weight: 900;
     letter-spacing: 5px;
     word-spacing: 4px;
+    text-transform: capitalize;
 }
 
 .breadcrumb-item a,.breadcrumb-item {
@@ -1235,9 +1239,13 @@ Description: Creative Portfolio Bootstrap 4 Template;
 }
 
 .single-expert h3 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
     margin: 6px 0 0px;
+}
+.single-expert h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 /*----------------------------------------*/
@@ -1274,7 +1282,15 @@ Description: Creative Portfolio Bootstrap 4 Template;
     height: 400px;
 }
 
-
+.about-bg{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+}
 /*----------------------------------------*/
 /* 10. Contact Area CSS
 /*----------------------------------------*/

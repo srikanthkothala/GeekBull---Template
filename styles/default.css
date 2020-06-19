@@ -170,6 +170,10 @@ background image
 .breadcrumb-bg{
     background: url(../img/breadcrumb/breadcrumb.jpg) no-repeat center center / cover;
 }
+.about-bg{
+    background: url(../img/about-bg.svg) no-repeat center center / cover;
+}
+
 /*************************************
 some default class
 **************************************/
