@@ -2065,6 +2065,84 @@ Description: Creative Portfolio Bootstrap 4 Template;
 }
 
 /*----------------------------------------*/
+/* 14. Product Engineering 
+/*----------------------------------------*/
+@media (min-width: 1461px){
+.homepage-technologies .domains .container {
+    max-width: 1200px;
+}}
+.homepage-technologies .domains .container {
+    position: relative;
+}
+
+@media (min-width: 1461px){
+.homepage-technologies {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}}
+.homepage-technologies {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.homepage-technologies .domains {
+    margin-top: 51px;
+    min-height: 1990px;
+    background: url(./img/technologies-medium.svg) no-repeat center top;
+}
+
+@media (min-width: 1461px){
+.homepage-technologies .domains {
+    margin-top: 42px;
+    min-height: 2230px;
+    background-image: url(./img/technologies-medium.svg);
+    }}
+
+@media (min-width: 1461px){
+.homepage-technologies .domains .item.is-frontend {
+    top: 451px;
+}
+}
+.homepage-technologies .domains .item.is-frontend {
+    top: 550px;
+}
+.homepage-technologies .domains .item.is-frontend, .homepage-technologies .domains .item.is-backend {
+    left: 55%;
+}
+.homepage-technologies .domains .item {
+    position: absolute;
+    width: 45%;
+}
+@media (min-width: 1001px){
+.homepage-technologies .domains .item img {
+    display: none;
+}}
+
+@media (min-width: 1461px){
+.homepage-technologies .domains p, .homepage-integrations p {
+    font-size: 19px;
+}}
+.homepage-technologies .domains p, .homepage-integrations p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+@media (min-width: 1461px){
+.homepage-technologies .domains .item.is-mobile {
+    top: 1005px;
+}
+}
+.homepage-technologies .domains .item.is-mobile {
+    top: 1000px;
+}
+@media (min-width: 1461px){
+.homepage-technologies .domains .item.is-backend {
+    top: 1514px;
+}}
+.homepage-technologies .domains .item.is-backend {
+    top: 1500px;
+}
+
+
+/*----------------------------------------*/
 /* 15. Subscribe Area CSS
 /*----------------------------------------*/
 .newsletter-box {
