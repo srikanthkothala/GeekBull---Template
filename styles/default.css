@@ -28,7 +28,7 @@ body {
 h1,h2,h3,h4,h5,h6{
     margin: 0;
     /*text-transform: uppercase;*/
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', serif;
 }
 p{
     color: #606060;
@@ -176,12 +176,19 @@ background image
 .contact-bg{
     background: url(../img/bg-contact-us.svg) no-repeat center center / cover;
 }
+.engineering-bg{
+    background: url(../img/slider/bg-Product-Engineering.png) no-repeat center center / cover;
+}
 
 /*************************************
 some default class
 **************************************/
 .full-screen{
     height: 110vh;
+    width: 100%;
+}
+.full-screen2{
+    height: 96vh;
     width: 100%;
 }
 .center-items {
