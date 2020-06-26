@@ -173,6 +173,9 @@ background image
 .about-bg{
     background: url(../img/about-bg.svg) no-repeat center center / cover;
 }
+.tech-consulting-bg{
+    background: url(../img/bg-technologies-consulting.jpg) no-repeat center center / cover;
+}
 .contact-bg{
     background: url(../img/bg-contact-us.svg) no-repeat center center / cover;
 }
@@ -223,7 +226,7 @@ some default class
 }
 .transparent-red-btn {
   background: transparent none repeat scroll 0 0;
-  /*border: 1px solid #303030;*/
+border: 1px solid #303030;
   color: #FFF;
   display: inline-block;
   font-size: 16px;
@@ -298,7 +301,7 @@ scroll up css
 #scrollUp {
   background: #fff none repeat scroll 0 0;
   border: 2px solid #303030;
-  bottom: 65px;
+  bottom: 100px;
   color: #303030;
   cursor: pointer;
   font-weight: 600;

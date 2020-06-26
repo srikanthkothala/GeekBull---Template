@@ -465,6 +465,9 @@ Description: Creative Portfolio Bootstrap 4 Template;
 .slidertext-style-two .transparent-red-btn {
     background: #E74039;
 }
+.subscribe-area .transparent-red-btn {
+    background: #E74039;
+}
 
 .slidertext-style-two .transparent-red-btn:hover {
     
@@ -1030,7 +1033,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
 .footer-top p {
     color: #bcbcbc;
     margin: auto;
-    width: 53%;
+    width: 80%;
 }
 
 .copyright-text p {
@@ -1310,10 +1313,17 @@ Description: Creative Portfolio Bootstrap 4 Template;
     font-weight: 600;
 }
 
+.single-expert img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    
+}
+
 .single-expert h3 {
     font-size: 2rem;
     font-weight: 600;
-    margin: 6px 0 0px;
+    margin: 6px 0 20px;
 }
 .single-expert h2 {
     font-size: 2.5rem;
@@ -1363,6 +1373,13 @@ Description: Creative Portfolio Bootstrap 4 Template;
     display: flex;
     height: 400px;
 }
+.tech-consulting-bg{-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;}
 .contact-bg{
     -webkit-box-align: center;
     -ms-flex-align: center;
