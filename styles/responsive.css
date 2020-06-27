@@ -15,7 +15,7 @@
     }
 
     .single-expert h3 {
-        font-size: 15px;
+        /*font-size: 15px;*/
     }
     .main-service-area .single-expert p {
         padding-right: 0;
@@ -131,7 +131,7 @@
         padding-right: 0;
     }
     .single-expert h3 {
-        font-size: 15px;
+       /* font-size: 15px;*/
     }
     .service-package .row {
         margin: 0 -15px;
@@ -549,7 +549,7 @@
         padding: 10px 25px;
     }
     .single-expert h3 {
-        font-size: 16px;
+        /*font-size: 16px;*/
         margin: 12px 0;
     }
     .single-expert span {
