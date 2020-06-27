@@ -153,7 +153,7 @@
                     <div class="col-lg-6">
                         <div class="contact-info">
                             <h3 class="contact-header"><span class="red">Want to connect</span> with us<br> Here is our <span class="red"> contact information</span></h3>
-                            <form id="contact-form" class="contact-form" action="mail.php" method="post">
+                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                                 <h6>Send us a message</h6>
                                 <div class="address-wrapper">
                                     <div class="address-fname">
@@ -171,8 +171,9 @@
                                 </div>
                                 <div class="footer-content mail-content clearfix">
                                     <div class="send-email">
-                                        <input value="send now" class="send-btn" type="submit">
+                                        <input value="send now" class="send-btn" onclick="document.getElementById('contact-form').submit();" type="submit">
                                     </div>
+                                    <div class="status"></div>
                                 </div>
                             </form>
                             <p class="form-message"></p>
