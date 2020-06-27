@@ -1953,7 +1953,15 @@ Description: Creative Portfolio Bootstrap 4 Template;
     border-color: #303030;
     background: transparent;
 }
+.jobs ul {
+  list-style: none;
+}
 
+.jobs ul li:before {
+  content: '✓';
+    color: #E74039;
+    margin-right: 10px;
+}
 /* blog sidebar css */
 .right-sidebar {
     padding-left: 25px;
