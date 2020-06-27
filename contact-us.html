@@ -153,25 +153,26 @@
                     <div class="col-lg-6">
                         <div class="contact-info">
                             <h3 class="contact-header"><span class="red">Want to connect</span> with us<br> Here is our <span class="red"> contact information</span></h3>
-                            <form id="contact-form" class="contact-form" action="mail.php" method="post">
+                         
+                                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
                                 <h6>Send us a message</h6>
                                 <div class="address-wrapper">
                                     <div class="address-fname">
                                         <label>Name</label>
-                                        <input class="form-control" name="name" type="text">
+                                        <input class="form-control" id="Name" name="name" type="text">
                                     </div>
                                     <div class="address-email">
                                         <label>Email</label>
-                                        <input class="form-control" name="email" type="email">
+                                        <input class="form-control" id="Email" name="Email" type="email">
                                     </div>
                                     <label>Message</label>
                                     <div class="address-textarea">
-                                        <textarea name="message" class="form-control"></textarea>
+                                        <textarea id="Message" name="Message" class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <div class="footer-content mail-content clearfix">
                                     <div class="send-email">
-                                        <input value="send now" class="send-btn" type="submit">
+                                        <input value="send now" class="send-btn" type="submit" id="fcf-button">
                                     </div>
                                 </div>
                             </form>
