@@ -1381,6 +1381,13 @@ Description: Creative Portfolio Bootstrap 4 Template;
     display: -ms-flexbox;
     display: flex;
     height: 400px;}
+.resources-bg{-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;}
 .contact-bg{
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2093,7 +2100,11 @@ Description: Creative Portfolio Bootstrap 4 Template;
 .homepage-technologies .domains .container {
     position: relative;
 }
-
+@media (max-width: 1000px){
+.homepage-technologies .domains {
+    min-height: 0;
+    background: none;
+}}
 @media (min-width: 1461px){
     .homepage-technologies {
         padding-top: 100px;

@@ -152,6 +152,12 @@ ul {
 .no-gutters .portfolio{
     margin-top: 0;
 }
+.pull-right {
+    float: right!important;
+}
+.pull-left {
+    float: left!important;
+}
 /*************************************
 background image
 **************************************/
@@ -175,6 +181,9 @@ background image
 }
 .tech-consulting-bg{
     background: url(../img/bg-technologies-consulting.jpg) no-repeat center center / cover;
+}
+.resources-bg{
+    background: url(../img/bg-resources.jpg) no-repeat center center / cover;
 }
 .contact-bg{
     background: url(../img/bg-contact-us.svg) no-repeat center center / cover;
