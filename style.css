@@ -2094,13 +2094,25 @@ Description: Creative Portfolio Bootstrap 4 Template;
 }
 
 @media (min-width: 1461px){
-.homepage-technologies {
-    padding-top: 100px;
-    padding-bottom: 20px;
-}}
+    .homepage-technologies {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+    .homepage-technologies .domains {
+    /*margin-top: 42px;*/
+    min-height: 1780px;
+    background-image: url(./img/technologies-big.svg);
+    }
+    .homepage-technologies .domains .item.is-frontend {
+    top: 451px;
+}
+    .homepage-technologies .domains p, .homepage-integrations p {
+    font-size: 19px;
+}
+}
 .homepage-technologies {
     /*padding-top: 80px;*/
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 .homepage-technologies .domains {
     /*margin-top: 51px;*/
@@ -2108,18 +2120,9 @@ Description: Creative Portfolio Bootstrap 4 Template;
     background: url(./img/technologies-big.svg) no-repeat center top;
 }
 .homepage-technologies .domains h2{font-size: 3rem;font-weight: 900;}
-@media (min-width: 1461px){
-.homepage-technologies .domains {
-    /*margin-top: 42px;*/
-    min-height: 2230px;
-    background-image: url(./img/technologies-big.svg);
-    }}
+.product-engg h2{font-size: 3rem;font-weight: 900;}
 
-@media (min-width: 1461px){
-.homepage-technologies .domains .item.is-frontend {
-    top: 451px;
-}
-}
+
 .homepage-technologies .domains .item.is-frontend {
     top: 550px;
 }
@@ -2135,17 +2138,14 @@ Description: Creative Portfolio Bootstrap 4 Template;
     display: none;
 }}
 
-@media (min-width: 1461px){
-.homepage-technologies .domains p, .homepage-integrations p {
-    font-size: 19px;
-}}
+
 .homepage-technologies .domains p, .homepage-integrations p {
     font-size: 16px;
     line-height: 1.6;
 }
 @media (min-width: 1461px){
 .homepage-technologies .domains .item.is-mobile {
-    top: 1005px;
+    top: 1050px!important;
 }
 }
 .homepage-technologies .domains .item.is-mobile {
@@ -2153,10 +2153,10 @@ Description: Creative Portfolio Bootstrap 4 Template;
 }
 @media (min-width: 1461px){
 .homepage-technologies .domains .item.is-backend {
-    top: 1514px;
+    top: 1650px!important;
 }}
 .homepage-technologies .domains .item.is-backend {
-    top: 1500px;
+    top: 1600px;
 }
 
 /*----------------------------------------*/
