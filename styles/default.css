@@ -189,7 +189,7 @@ background image
     background: url(../img/bg-contact-us.svg) no-repeat center center / cover;
 }
 .engineering-bg{
-    background: url(../img/slider/bg-Product-Engineering.png) no-repeat center center / cover;
+    background: url(../img/slider/bg-Product-Engineering-2.png) no-repeat center center / cover;
 }
 
 /*************************************
@@ -200,7 +200,7 @@ some default class
     width: 100%;
 }
 .full-screen2{
-    height: 96vh;
+    height: 80vh;
     width: 100%;
 }
 .center-items {
