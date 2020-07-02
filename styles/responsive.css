@@ -40,6 +40,9 @@
 
 /*=============== Large(LG) Device ===============*/
 @media (min-width: 992px) and (max-width: 1199px) {
+    .full-screen {
+    height: 155vh;
+}
     .package-list {
         padding-left: 35px;
     }
