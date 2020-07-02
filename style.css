@@ -1409,7 +1409,7 @@ Description: Creative Portfolio Bootstrap 4 Template;
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 25px;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
 }
 
 .contact-header.default-header {
