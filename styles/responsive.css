@@ -41,7 +41,7 @@
 /*=============== Large(LG) Device ===============*/
 @media (min-width: 992px) and (max-width: 1199px) {
     .full-screen {
-    height: 155vh;
+    height: 130vh;
 }
     .package-list {
         padding-left: 35px;
@@ -118,7 +118,9 @@
     .social-style-two li a {
         margin: 0 10px;
     }
-    
+    /*.full-screen {
+        height: 120vh;
+    }*/
     .absolute-header {
         top: 30px;
     }
