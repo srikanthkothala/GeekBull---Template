@@ -440,17 +440,18 @@ Description: Creative Portfolio Bootstrap 4 Template;
 .slidertext-style-two h5{
     color: #E74039;
 }
-.slidertext-style-two h1,
+.slidertext-style-two h1{
+    color: #E74039;}
 .slidertext-style-two h2 {
-    color: #E74039;
+    color: #000000;
 }
 
 .slidertext-style-two .cd-headline.clip .cd-words-wrapper::after {
-    background-color: #efefef;
+    background-color: #000;
 }
 
 .slidertext-style-two .cd-headline.clip .cd-words-wrapper {
-    color: #efefef;
+    color: #000;
 }
 
 .slidertext-style-two .transparent-btn {
@@ -1956,12 +1957,21 @@ Description: Creative Portfolio Bootstrap 4 Template;
 }
 .jobs ul {
   list-style: none;
+    list-style-position: outside!important;
+    padding: 0;
+    margin-top: 2em;
 }
-
+.jobs ul li {
+    padding: 4px 0 4px 47px;
+    font-weight: 400;
+    line-height: 1.4;
+}
 .jobs ul li:before {
-  content: '✓';
-    color: #E74039;
-    margin-right: 10px;
+  content: '\f00c';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -1.5em;
+    color: #e03c31;
 }
 /* blog sidebar css */
 .right-sidebar {
